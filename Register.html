@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Page</title>
+    <link rel="stylesheet" type="text/css" href="Register.css">
+</head>
+<body id="tulisan">
+        <div class="logo">
+            <a href="Home.html">
+                <img src="Project AMDP1 - HTML, CSS, JS/assets/web_assets/forums-header-logo.png" width="175px" height="50px"> 
+                <!-- saya memakai width dan height di html karena saat dimasukan tanpa height dan width akan menjadi sangat besar -->
+            </a>
+			</div>
+			
+			<div class="header-right">
+				<a href="Home.html" class="button"> < Back to Home </a>
+            </div>
+            
+			<div class="header-line"><hr></div>
+            
+            <center><h1>Join Forums</h1></center>
+                <form action="#" method="GET" onsubmit="return validate()" name="mylitteform" class="littleform">
+            <div class="sama">
+                <span><h3>What's your name ?</h3></span>
+                <span><input type="text" name="nama_lengkap" id="txtnama" placeholder="Enter your name" class="form"></span>
+                <span class="error" id="errnama"></span>
+                <br>
+            </div>
+            <div class="sama">
+                <span><h3>What's your email address ?</h3></span>
+                
+                <span><input type="email" name="email" id="txtemail" placeholder="Enter your email" class="form"> </span>
+                <span class="error" id="erremail"></span>
+                <br>
+            </div>
+            <div class="sama">
+                <span><h3>What's your phone number ?</h3></span>
+               
+                <span><input type="text" name="phone" id="txtphone" placeholder="Enter your phone number" class="form"></span>
+                <span class="error" id="errphone"></span>
+                <br>
+            </div class="sama">
+            <h3 class="sama">Additional information</h3>
+            <div class="sama">
+                    <spa">Home address</span>
+                    <br>
+                    <br>
+                    <textarea  name="address" id="txtaddress" placeholder="Enter your address" class="form" cols="1" rows="50"></textarea>
+                    <span class="error" id="erraddress"></span>
+                    <br>
+                    <br>
+            </div>
+            <div class="sama">
+                    <span>Gender</span>
+                    <span><input type="radio" name="gender" id="radiogenderM">Male</span>
+                    <span><input type="radio" name="gender" id="radiogenderF">Female</span>
+                    <span class="error" id="errgender"></span>
+                    <br>
+            </div>
+            <div class="sama">
+                    <span><h3>Set up your password</h3></span>
+                    
+                    <div><input type="password" name="password" id="password" placeholder="Enter your password" class="form"></div>
+                    <span class="error" id="errpass"></span>
+                    <br>
+                    <br>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="submit"> 
+            </div>
+            <br>
+            </form>
+            <script src="Validation.js"></script>
+            <div class="footer">Forums © Gary Sundjaja 2019</div>
+</body>
+
+</html>

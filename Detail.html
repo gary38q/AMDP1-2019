@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detail Page</title>
+    
+</head>
+<link rel="stylesheet" type="text/css" href="Detail.css">
+<body>
+    
+    <div class="logo">
+    <a href="Home.html">
+        <img src="Project AMDP1 - HTML, CSS, JS/assets/web_assets/forums-header-logo.png" width="175px" height="50px">
+        <!-- saya memakai width dan height di html karena saat dimasukan tanpa height dan width akan menjadi sangat besar -->
+    </a>
+    </div>
+    
+    <div class="header-right">
+        <a href="Home.html" class="button"> < Back to Home </a>
+    </div>
+    
+    <div class="header-line"><hr></div>
+    <div class="question">
+        <h2>How to find the first non repeated character of a given string ?</h2>
+        <h5>The answer her is d. So the point that strikes me is that it can be done in two ways : For every index i loop i-1 times and check if that character occurs ever again. But this is not efficient : growth of this method is O(N^2) where N is the length of the string. Another possible good way could be if I could form a trere or any other ds such that i could order the character based on the weights (the occurrencs count ). This could take me just loopo of length N through the string to form the structure. That is just O(N) + O (time to build tree or any ds).</h5>
+        <img src="Project AMDP1 - HTML, CSS, JS/assets/web_assets/anonymous/profile_male.jpg" class="foto">
+        <div id="nama" class="tulisan">Mary Ham </div>
+        <div id="view">Viewed 624 times</div>
+        <div id="Reply">3 answer submitted</div>        
+        
+    </div>
+    <div class="komentars">
+            <img src="Project AMDP1 - HTML, CSS, JS/assets/web_assets/anonymous/profile_male.jpg" class="foto-reply"><br>
+            <div id="nama-reply" class="tulisan">Poppy Harlow</div><br>
+            <h5 id="tulisan-reply">Here's a very straightfoward O(n) solution: def fn(s): order = [] counts = {} for x in s: if x in counts: counts[x] +=1 else: counts[x] = 1 order.append(x) for x in order: if counts[x] == 1: return X return None We loop through the string once. When we come across a new character, we store it in counts with a value of 1, and append it to order. When we come across a character we've seen before, we increment its value in counts. Finally,we loop through order until we find a character with a value of 1 in counts and return it. </h5>
+    </div>
+    <div class="komentars">
+            <img src="Project AMDP1 - HTML, CSS, JS/assets/web_assets/anonymous/profile_male.jpg" class="foto-reply"><br>
+            <div id="nama-reply" class="tulisan">Gloria Borger</div><br>
+            <h5 id="tulisan-reply">Here's a very straightfoward O(n) solution: def fn(s): order = [] counts = {} for x in s: if x in counts: counts[x] +=1 else: counts[x] = 1 order.append(x) for x in order: if counts[x] == 1: return X return None We loop through the string once. When we come across a new character, we store it in counts with a value of 1, and append it to order. When we come across a character we've seen before, we increment its value in counts. Finally,we loop through order until we find a character with a value of 1 in counts and return it. </h5>
+    </div>
+    <div class="komentars">
+            <img src="Project AMDP1 - HTML, CSS, JS/assets/web_assets/anonymous/profile_male.jpg" class="foto-reply"><br>
+            <div id="nama-reply" class="tulisan">Poppy Gloria</div><br>
+            <h5 id="tulisan-reply">A list comprehension will give you the characters in the order they appear if they onlu appear once: in[61]: s = 'aabccbdcbe' in [62]: [a for a in s if s.count(a) == 1] Out[62]: ['d','e'] Then just return the first entry of this: in [63]:[a for a in s if s.count(a) == 1][0] Out [63]: 'd' if you just need the first entry, a generator would work as well: in [69]: (a fora in s if s .count(a) == 1).next() Out[69]:'d'</h5>
+    </div>
+    <form class="komentar">
+        <textarea  name="kotakkomentar" id="kotak-komentar" class="form" cols="170" rows="3"></textarea>
+        <br>
+        <br>
+        <input type="reset" value="Reply" class="reply">
+        <!-- saya menggunakan reset karena di soal tidak diminta untuk melakukan post saat di click Reply -->
+    </form>
+
+    <div class="footer">Forums © Gary Sundjaja 2019</div>
+</body>
+</html>
